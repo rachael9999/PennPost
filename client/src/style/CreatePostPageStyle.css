@@ -1,0 +1,32 @@
+div.create-post-page {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: calc(100vh - 140px);
+}
+
+.create-post-form {
+  background-color: #e4e4e4;
+  flex-direction: column;
+  width: 70vw; 
+  height: 70vh; 
+  padding: 20px; 
+}
+
+TextField, textarea.create-post-form-content {
+  padding: 10px; 
+  font-size: 1rem; 
+  width: 100%; 
+}
+
+.create-post-form-content {
+  height: 30vh; 
+  margin-bottom: 20px; 
+}
+
+.input-field {
+  width: 100%; 
+  padding: 10px; 
+  font-size: 1rem; 
+  margin-bottom: 15px; 
+}

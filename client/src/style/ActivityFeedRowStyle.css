@@ -1,0 +1,132 @@
+div.activity-feed-row {
+  min-height: 20vh;
+  width: 90%;
+  margin: 5% auto;
+  border: 2px solid #e7e1e1;
+  border-radius: 25px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+div.activity-feed-row:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+div.activity-feed-row-container {
+  padding: 3%;
+}
+
+div.activity-feed-row-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-direction: row; 
+  margin-bottom: 2%;
+}
+
+p.activity-feed-row-data {
+  font-size: 15px;
+  font-style: italic;
+  color: #333;
+  margin-top: 1%;
+}
+
+img.activity-feed-row-img {
+  max-width: 100%; 
+  border-radius: 20px;
+  display: block; 
+  margin: 2% auto;
+}
+
+div.activity-feed-row-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+Button.follow-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  color: white;
+  background-color: rgb(167, 124, 223);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+Button.hide-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+  color: white;
+  background-color: grey;
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+Button.follow-btn:hover {
+  background-color: purple;
+  transform: translateY(-2px);
+}
+
+Button.hide-btn:hover {
+  background-color: #8F8F8F;
+  transform: translateY(-2px);
+}
+
+pre.content-text {
+  background-color: #f0f0f8; 
+  text-align: left;
+  font-style: normal;
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-left: 10px;
+  width: calc(100% - 20px);
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.like-button,
+.comment-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.liked-icon,
+.unliked-icon {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) { 
+  p.activity-feed-row-data {
+    font-size: 10px;
+    margin-top: 1%;
+  }
+
+  .container-fluid.activity-feed-row-container {
+    font-size: 0.8rem; 
+  }
+
+  .activity-feed-row-title {
+    font-size: 1rem; 
+  }
+}

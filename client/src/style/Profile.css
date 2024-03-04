@@ -1,0 +1,112 @@
+body, html {
+  margin: 0; 
+  overflow-y: auto;
+}
+
+.App {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  overflow-y: auto;
+}
+
+.navbar-brand {
+  font-family: 'Rubik Mono One';
+  font-size: 35px;
+  background: transparent;
+}
+
+.nav-link#signout {
+  font-family: 'Gabarito';
+  font-size: 22px;
+  margin-right: 5%;
+}
+
+.nav-link#signout:hover {
+  text-decoration: underline;
+}
+
+.nav-link#profilePic {
+  margin-right: 1%;
+}
+
+.btn#update_profile {
+  background: rgb(167, 124, 223);
+  box-shadow: none;
+  border: none
+}
+
+.btn:hover#update_profile {
+  background: purple;
+}
+.main-container {
+  display: flex;
+  height: auto;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  flex: 0 0 20vw;
+  position: relative;
+  background-color: rgb(167, 161, 161);
+  
+}
+.sidebar .buttons{
+  position: fixed;
+  row-gap: 15px;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #e4e4e4;
+}
+  
+.sidebar-btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.fill-icon {
+  display: none;
+}
+
+.sidebar-btn:hover .outline-icon {
+  display: none;
+}
+
+.sidebar-btn:hover .fill-icon {
+  display: inline-block;
+}
+
+
+.sidebar-btn span.text {
+  display: inline;
+  margin-left: 10px; 
+}
+
+@media (max-width: 768px) { /* Adjusted the media query */
+  .sidebar {
+    flex: 0 0 10vw; 
+  }
+
+  .sidebar-btn span.text {
+    display: none; 
+  }
+}

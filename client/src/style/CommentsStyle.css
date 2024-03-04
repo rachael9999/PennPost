@@ -1,0 +1,21 @@
+.comments {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-size {
+  display: flex; 
+  justify-content: center;
+}
+
+.comment-rows {
+  display: flex; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-comment-box {
+  display: flex;
+  justify-content: space-between;
+}

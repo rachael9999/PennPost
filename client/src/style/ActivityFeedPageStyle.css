@@ -1,0 +1,64 @@
+div.activity-feed {
+  min-height: 100vh;
+}
+
+div.create-post-btn {
+  margin-top: 10vh;
+  position: fixed;
+  display: flex; 
+  flex-direction: column;
+}
+
+.following-table {
+  position: fixed;
+  bottom: 0; 
+  width: 20vw; 
+  left: 50%;
+  left:0;
+  z-index: 10;
+  box-sizing: border-box; 
+}
+
+.post-filter {
+  position: fixed;
+  bottom: 0;
+  left: 20vw;  
+  width: 79vw;  
+  z-index: 10;
+  background-color: rgb(167, 161, 161);
+  padding: 10px;
+  display: flex;
+  gap: 50px; 
+  justify-content: center;
+  box-sizing: border-box; 
+}
+.post-filter button {
+  padding: 15px 25px;  
+  font-size: large;  
+  flex: 1;  
+  width: auto;  
+  height: auto; 
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) { 
+  .post-filter {
+    left: 14vw; 
+    width: 84vw;
+    font-size:small;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    gap: 30px;
+  }
+
+  .post-filter button {
+    padding: 10px 15px;  
+    font-size: small;  
+    flex: 1;  
+    width: auto;  
+    height: auto; 
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+}
